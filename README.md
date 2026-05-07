@@ -105,24 +105,3 @@ Drop a `[SerializeField] BigNumber currency;` on any MonoBehaviour. The custom d
 For idle-game scale this is more than enough — comparable to `break_infinity.js`. For tetration-scale games (Antimatter Dimensions territory), a different library is needed.
 
 ---
-
-## Tests
-
-Run via Window → General → Test Runner. The `NekoBigNum.Tests` assembly covers:
-- Arithmetic correctness, including the original code's sign-comparison bug
-- Formatter round-trips for all formats and suffix boundaries (a..z, aa, ab, ba)
-- Parser accepting all formats and rejecting invalid input
-- Math operations (Pow, Sqrt, Log10, Min/Max, Lerp, etc.)
-- `JsonUtility` and `Newtonsoft` round-trips
-- Edge cases: huge exponent gaps, negative bases, zero handling
-
----
-
-## Migration from old BigNumber
-
-Old saves used base-1000 exponents. To migrate:
-- Old: `mantissa=1.5, exponent=2` meant `1.5 * 1000^2 = 1.5e6`
-- New: same value is `mantissa=1.5, exponent=6`
-- Migration: `newExponent = oldExponent * 3`
-
-A migration helper is not bundled — write one in your save-loading code if you need it.
