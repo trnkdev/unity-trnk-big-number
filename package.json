@@ -1,0 +1,21 @@
+{
+  "name": "com.nekoindie.nekounity.bignumber",
+  "version": "0.1.0",
+  "displayName": "NekoBigNum",
+  "description": "High-performance BigNumber for Unity idle / incremental games. Stores a normalized double mantissa plus a long base-10 exponent for ~15 digits of precision and effectively unlimited magnitude.",
+  "unity": "6000.0",
+  "keywords": [
+    "idle",
+    "incremental",
+    "bignumber",
+    "math",
+    "currency",
+    "nekolib"
+  ],
+  "author": {
+    "name": "Nguyen Thanh Trung",
+    "url": "https://github.com/boobosua"
+  },
+  "category": "Utility",
+  "samples": []
+}
