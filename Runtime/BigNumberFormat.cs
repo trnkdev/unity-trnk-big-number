@@ -1,4 +1,4 @@
-namespace NekoBigNum
+namespace TRnK.BigNum
 {
     /// <summary>
     /// Display format options for <see cref="BigNumber"/>.

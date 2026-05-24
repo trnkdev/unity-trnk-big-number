@@ -2,7 +2,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace NekoBigNum.Editor
+namespace TRnK.BigNum.Editor
 {
     /// <summary>
     /// Inspector drawer for <see cref="BigNumber"/>. Shows a single editable text field that accepts

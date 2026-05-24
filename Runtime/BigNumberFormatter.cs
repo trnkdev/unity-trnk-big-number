@@ -2,7 +2,7 @@ using System;
 using System.Globalization;
 using System.Text;
 
-namespace NekoBigNum
+namespace TRnK.BigNum
 {
     /// <summary>
     /// Formats <see cref="BigNumber"/> values for display.

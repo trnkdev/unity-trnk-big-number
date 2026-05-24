@@ -2,7 +2,7 @@
 using System;
 using Newtonsoft.Json;
 
-namespace NekoBigNum
+namespace TRnK.BigNum
 {
     /// <summary>
     /// Compact JSON converter for <see cref="BigNumber"/>. Serializes as <c>{"m":1.5,"e":30}</c>.
@@ -10,7 +10,7 @@ namespace NekoBigNum
     /// </summary>
     /// <remarks>
     /// To enable, add the <c>NEWTONSOFT_JSON</c> scripting define symbol after installing
-    /// <c>com.unity.nuget.newtonsoft-json</c>. NekoBigNum compiles fine without it.
+    /// <c>com.unity.nuget.newtonsoft-json</c>. TRnK.BigNum compiles fine without it.
     /// Apply via <c>[JsonConverter(typeof(BigNumberConverter))]</c> on a field, or register globally
     /// in your <c>JsonSerializerSettings.Converters</c>.
     /// </remarks>

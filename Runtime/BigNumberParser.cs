@@ -1,7 +1,7 @@
 using System;
 using System.Globalization;
 
-namespace NekoBigNum
+namespace TRnK.BigNum
 {
     /// <summary>
     /// Parses strings produced by <see cref="BigNumberFormatter"/> back into a <see cref="BigNumber"/>.

@@ -1,6 +1,6 @@
 {
-    "name": "NekoBigNum.Runtime",
-    "rootNamespace": "NekoBigNum",
+    "name": "TRnK.BigNum.Runtime",
+    "rootNamespace": "TRnK.BigNum",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],

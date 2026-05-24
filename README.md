@@ -1,4 +1,4 @@
-# Neko Big Number
+# TRnK BigNum
 
 High-performance BigNumber for Unity idle / incremental games.
 
@@ -10,10 +10,10 @@ Designed to match the conventions of `break_infinity.js` and Adventure-Capitalis
 
 ## Install
 
-Place under `Packages/com.nekoindie.nekobignum/` or add to `Packages/manifest.json`:
+Place under `Packages/com.trnkdev.unitybignumber/` or add to `Packages/manifest.json`:
 
 ```json
-"com.nekoindie.nekobignum": "file:../path/to/NekoBigNum"
+"com.trnkdev.unitybignumber": "file:../path/to/TRnK.BigNum"
 ```
 
 Optional: install `com.unity.nuget.newtonsoft-json` to enable the bundled `BigNumberConverter`. The `NEWTONSOFT_JSON` define is set automatically via `versionDefines` when the package is present.
@@ -23,7 +23,7 @@ Optional: install `com.unity.nuget.newtonsoft-json` to enable the bundled `BigNu
 ## Usage
 
 ```csharp
-using NekoBigNum;
+using TRnK.BigNum;
 
 BigNumber money = 1000;          // implicit conversion from int/long/float/double/decimal
 BigNumber price = new(1.5, 30);  // 1.5e30

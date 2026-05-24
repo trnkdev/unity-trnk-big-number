@@ -1,7 +1,7 @@
 {
-  "name": "com.nekoindie.nekounity.bignumber",
-  "version": "0.1.0",
-  "displayName": "NekoBigNum",
+  "name": "com.trnkdev.unitybignumber",
+  "version": "1.0.0",
+  "displayName": "TRnK Big Number",
   "description": "High-performance BigNumber for Unity idle / incremental games. Stores a normalized double mantissa plus a long base-10 exponent for ~15 digits of precision and effectively unlimited magnitude.",
   "unity": "6000.0",
   "keywords": [
@@ -10,7 +10,7 @@
     "bignumber",
     "math",
     "currency",
-    "nekolib"
+    "trnk"
   ],
   "author": {
     "name": "Nguyen Thanh Trung",

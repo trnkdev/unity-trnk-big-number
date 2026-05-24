@@ -2,7 +2,7 @@ using System;
 using System.Globalization;
 using UnityEngine;
 
-namespace NekoBigNum
+namespace TRnK.BigNum
 {
     /// <summary>
     /// High-performance numeric value for idle / incremental games.

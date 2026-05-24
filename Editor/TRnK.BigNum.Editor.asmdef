@@ -1,6 +1,6 @@
 {
-    "name": "NekoBigNum.Editor",
-    "rootNamespace": "NekoBigNum.Editor",
+    "name": "TRnK.BigNum.Editor",
+    "rootNamespace": "TRnK.BigNum.Editor",
     "references": [
         "GUID:151dd1c0857e11f4a9b439527a28c006"
     ],

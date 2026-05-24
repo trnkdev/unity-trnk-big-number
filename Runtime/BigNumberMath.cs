@@ -1,6 +1,6 @@
 using System;
 
-namespace NekoBigNum
+namespace TRnK.BigNum
 {
     /// <summary>
     /// Math utilities for <see cref="BigNumber"/>. Mirrors a subset of <see cref="System.Math"/>.
