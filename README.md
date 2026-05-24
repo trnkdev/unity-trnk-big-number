@@ -10,6 +10,14 @@ Designed to match the conventions of `break_infinity.js` and Adventure-Capitalis
 
 ## Install
 
+### Via Git URL (Unity Package Manager)
+
+```
+https://github.com/trnkdev/unity-trnk-big-number.git
+```
+
+### Via local path / embedded package
+
 Place under `Packages/com.trnkdev.unitybignumber/` or add to `Packages/manifest.json`:
 
 ```json
