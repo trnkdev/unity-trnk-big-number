@@ -1,4 +1,4 @@
-# TRnK BigNum
+# TRnK Big Number
 
 High-performance BigNumber for Unity idle / incremental games.
 
