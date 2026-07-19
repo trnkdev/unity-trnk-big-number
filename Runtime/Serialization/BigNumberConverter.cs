@@ -9,10 +9,12 @@ namespace TRnK.BigNum
     /// Reading also accepts a bare number (e.g. <c>1500000</c>) for convenience and migration.
     /// </summary>
     /// <remarks>
-    /// To enable, add the <c>NEWTONSOFT_JSON</c> scripting define symbol after installing
-    /// <c>com.unity.nuget.newtonsoft-json</c>. TRnK.BigNum compiles fine without it.
-    /// Apply via <c>[JsonConverter(typeof(BigNumberConverter))]</c> on a field, or register globally
-    /// in your <c>JsonSerializerSettings.Converters</c>.
+    /// Active automatically when <c>com.unity.nuget.newtonsoft-json</c> is installed
+    /// (the package's versionDefines set <c>NEWTONSOFT_JSON</c>); TRnK.BigNum compiles
+    /// fine without it. <see cref="BigNumber"/> carries a type-level
+    /// <c>[JsonConverter]</c> binding to this converter, so every BigNumber field
+    /// serializes as <c>{"m","e"}</c> with no per-field attributes or registration.
+    /// A per-field <c>[JsonConverter]</c> attribute can still override it.
     /// </remarks>
     public class BigNumberConverter : JsonConverter<BigNumber>
     {

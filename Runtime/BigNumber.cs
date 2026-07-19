@@ -15,6 +15,9 @@ namespace TRnK.BigNum
     /// All operators return new instances.
     /// </remarks>
     [Serializable]
+#if NEWTONSOFT_JSON
+    [Newtonsoft.Json.JsonConverter(typeof(BigNumberConverter))]
+#endif
     public struct BigNumber : IComparable<BigNumber>, IEquatable<BigNumber>, IFormattable
     {
         // Sentinel for "not yet normalized"; the constructor always normalizes.

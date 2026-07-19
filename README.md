@@ -83,16 +83,19 @@ BigNumber.TryParse("1_500_000", out var n);
 
 **`JsonUtility` works out of the box** — `[SerializeField]` fields produce compact `{"_mantissa":1.5,"_exponent":30}`.
 
-**Newtonsoft (optional):**
-```csharp
-using Newtonsoft.Json;
+**Newtonsoft (optional) — zero setup.** When `com.unity.nuget.newtonsoft-json`
+is installed, `BigNumber` carries a type-level `[JsonConverter]` binding to the
+bundled `BigNumberConverter`, so any Newtonsoft serialization (including TRnK
+SaveLoad) handles `BigNumber` fields automatically:
 
-var settings = new JsonSerializerSettings();
-settings.Converters.Add(new BigNumberConverter());
-string json = JsonConvert.SerializeObject(saveData, settings);
+```csharp
+string json = JsonConvert.SerializeObject(saveData);   // BigNumber fields just work
 ```
 
-The Newtonsoft converter emits `{"m":1.5,"e":30}` to keep save files small. It also reads bare numbers (`1500000`) for migration from older formats.
+The converter emits `{"m":1.5,"e":30}` to keep save files small, and also reads
+bare numbers (`1500000`) for migration from older formats. A per-field
+`[JsonConverter]` attribute can override the type-level binding if a game ever
+needs a different format.
 
 ### Inspector
 
